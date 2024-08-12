@@ -1,9 +1,6 @@
+import streamlit as st
 import pandas as pd
+import numpy as np
 
-dt = { 
-    'car':['BMW', 'Volvo', 'Ford'],
-    'passing':[3,7,2]  
-}
 
-df = pd.DataFrame(dt)
 
