@@ -25,9 +25,9 @@ data = load_data(10000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text('Loading data...done!')
 
-if st.checkbox('show raw data'):
-         st.subheader('raw data)
-         st.write(data)
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(data)
 
 st.subheader('Number of pickups by hour')
 hist_value = np.histrogram(data[DATE_COLUMN].dt.hour, bins = 24, range = (0, 24))[0]
