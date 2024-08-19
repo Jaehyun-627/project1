@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from viz import DATE_COLUMN'
+from viz2 import DATE_COLUMN
 
 st.title('Simple Sales Data Dashboard')
 
