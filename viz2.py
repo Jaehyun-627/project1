@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Simple Sales Data Dashboard')
+st.title('Simple Sales Data Dashboard - by Jaehyun')
 
 filename = "sales_data.csv"
 
