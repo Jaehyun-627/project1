@@ -16,7 +16,7 @@ if st.checkbox('Show Raw data'):
   st.subheader('Raw Data')
   st.wrtie(data)
 
-agg_data = data.groupby(['Region']).sum()
+agg_data = data.groupby(['Region']).sum().rest_index()
 
 # st.write(agg_data)
 
