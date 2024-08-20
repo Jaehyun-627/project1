@@ -1,5 +1,4 @@
 import streamlit as st
-
 import pandas as pd
 import numpy as np
 
@@ -7,11 +6,21 @@ from viz2 import DATE_COLUMN
 
 st.title('Simple Sales Data Dashboard')
 
-DATE_COLUMN = 'Product'
+filename = "sales_data.csv"
 
-def load_data(nrows):
-  data = pd.read_csv("sales_data.csv", nrows = nrows)
-  lowercase = lambda x: str(x).lower()
-  data.rename(lowercase, axis='columns', inplace=True)
-  data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
+def load_data():
+  data = pd.read_csv(filename)
   return data
+
+if st.checkbox('Show Raw data'):
+  st.subheader('Raw Data')
+  st.wrtie(data)
+
+agg_data = data.groupby(['Region']).sum
+
+st.write(agg_data)
+
+# df = pd.DataFrame({'Product'['Product A', 'ProductA', 'ProductA', 'ProductA', 'ProductB', 'ProductB','ProductB','ProductB'], 
+#                    'Region'['North', 'South', 'East', 'West','North', 'South', 'East', 'West'],
+#                    'Sales'['150', '200', '250', '175', '300', '230', '210', '190']})
+
