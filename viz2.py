@@ -18,7 +18,10 @@ if st.checkbox('Show Raw data'):
 
 agg_data = data.groupby(['Region']).sum()
 
-st.write(agg_data)
+# st.write(agg_data)
+
+st.bar_chart(agg_data, x = 'Region', y= 'Sales')
+
 
 # df = pd.DataFrame({'Product'['Product A', 'ProductA', 'ProductA', 'ProductA', 'ProductB', 'ProductB','ProductB','ProductB'], 
 #                    'Region'['North', 'South', 'East', 'West','North', 'South', 'East', 'West'],
