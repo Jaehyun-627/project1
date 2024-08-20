@@ -1,1 +1,9 @@
-
+Product,Region,Sales
+Product A,North,150
+Product A,South,200
+Product A,East,250
+Product A,West,175
+Product B,North,300
+Product B,South,230
+Product B,East,210
+Product B,West,190
