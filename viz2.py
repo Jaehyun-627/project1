@@ -10,6 +10,8 @@ def load_data():
   data = pd.read_csv(filename)
   return data
 
+data = load_data()
+
 if st.checkbox('Show Raw data'):
   st.subheader('Raw Data')
   st.wrtie(data)
