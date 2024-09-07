@@ -4,13 +4,12 @@ import numpy as np
 
 st.title("Product Review Data")
 
-Data_URl = 'sales_data.csv'
+DATA_URL = 'sales_data.csv'
 def load_data():
-  data = pd.read_csv(Data_URL)
+  data = pd.read_csv(DATA_URL)
   return data
 
 data = load_data()
-
 if st.checkbox("Show raw data"):
   st.subheader("Raw Data")
   st.write(data)
