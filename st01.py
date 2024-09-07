@@ -4,7 +4,7 @@ import numpy as np
 
 st.title("Product Review Data")
 
-Data_URl = "sales_data.csv"
+Data_URl = 'sales_data.csv'
 def load_data():
   data = pd.read_csv(Data_URL)
   return data
