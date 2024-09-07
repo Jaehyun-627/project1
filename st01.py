@@ -7,7 +7,7 @@ st.title("Product Review Data")
 Data_URl = sales_data.csv
 def load_data():
   data = pd.read_csv(Data_URL)
-  retrun data
+  return data
 
 data = load_data()
 
